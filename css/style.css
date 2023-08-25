@@ -1,0 +1,207 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+}
+header {
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: #212529;
+  z-index: 100;
+}
+.navbar .navbar-brand {
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+  padding: 15px 0px !important;
+}
+.navbar .navbar-brand:hover {
+  color: white;
+}
+.navbar .nav-link {
+  font-size: 40px;
+  position: relative;
+  color: white !important;
+}
+.navbar .nav-link i {
+  color: white;
+}
+.navbar .nav-link .num {
+  min-width: 30px;
+  min-height: 30px;
+  position: absolute;
+  right: 0;
+  top: 3px;
+  border-radius: 5px;
+  background-color: crimson;
+  font-size: 18px;
+  padding: 2px 5px;
+  text-align: center;
+}
+/* ==============for nav res=============== */
+.navbar-toggler {
+  border: 2px solid white !important;
+}
+.navbar-toggler .fa-bars {
+  color: white !important;
+}
+/* ==============for nav res=============== */
+@media (max-width: 992px) {
+  .navbar .nav-link .num {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 26px;
+    top: 3px;
+    border-radius: 5px;
+    background-color: crimson;
+    font-size: 18px;
+    padding: 2px 5px;
+    text-align: center;
+  }
+}
+/* ====products============ */
+.products {
+  width: 100%;
+  margin-top: 120px;
+}
+.products .con {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.card {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px !important;
+}
+.card .img {
+  margin-bottom: 10px;
+}
+.card .img img {
+  width: 100%;
+  height: 300px;
+  border-top-right-radius: 5px !important;
+  border-top-left-radius: 5px !important;
+}
+.card p {
+  width: 100%;
+  font-size: 18px;
+}
+.card .price-quantity {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.card .price-quantity .quantity .counter {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+}
+.quantity button {
+  width: 20px;
+  height: 20px;
+  border: 1px solid red;
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.quantity {
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+/* =======================================cart page=========================== */
+.ResultCart {
+  margin-top: 100px;
+  width: 100%;
+}
+.ResultCart .textCenter,
+.ResultCart .shoppingCart {
+  width: 100%;
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.ResultCart .textCenter p {
+  font-size: 30px;
+  font-weight: bold;
+}
+.ResultCart .textCenter .button {
+  display: flex;
+  gap: 20px;
+}
+.ResultCart .textCenter .button button {
+  border: none;
+  outline: none;
+  padding: 5px 20px;
+  border-radius: 5px;
+  color: white;
+}
+.ResultCart .textCenter .button button:nth-child(1) {
+  background-color: green;
+}
+.ResultCart .textCenter .button button:nth-child(2) {
+  background-color: red;
+}
+.textCenter .empty {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.textCenter .BackBtn {
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  padding: 5px 20px;
+  text-decoration: none;
+}
+/* ===============shoppingCart========= */
+.shoppingCart .itemCart {
+  border: 2px solid black;
+  padding: 5px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  width: 350px;
+}
+.shoppingCart .itemCart .img {
+  width: 110px;
+  height: 110px;
+  margin-right: 10px;
+}
+.shoppingCart .itemCart .img img {
+  width: 100%;
+  height: 100%;
+}
+.shoppingCart .itemCart .details {
+  width: 190px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.shoppingCart .itemCart .details .det1 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.shoppingCart .itemCart .details .det1 .proPrice {
+  padding: 3px;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+}
+.shoppingCart .itemCart .details .det1 .proRemove {
+  font-size: 20px;
+  color: red;
+  cursor: pointer;
+}
